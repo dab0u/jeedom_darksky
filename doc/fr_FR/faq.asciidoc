@@ -1,0 +1,17 @@
+[panel,primary]
+.Est-ce que le plugin s'appuie sur des API tiers ?
+--
+Oui, le plugin récupère les valeurs de Forecast.io
+--
+
+[panel,primary]
+.Est-ce que le plugin s'appuie sur des plugins tiers ?
+--
+Oui, il utilise un équipement du plugin geoloc.
+--
+
+[panel,primary]
+.Comment utiliser les informations de lever/coucher du soleil ?
+--
+Il faut utiliser un scénario avec pour déclencheur le lever ou coucher du soleil. Puis utiliser des blocs à condition 'A'
+--
