@@ -5,7 +5,7 @@
  <center class="widget-name"><strong><a href="#eqLink#" style="font-size : 1.1em;"> #city# </a></strong></center>
  <div style="position : relative; left : 15px;" class="tooltips" title="#collectDate#">
     <span class="pull-left">
-        <canvas id="forecastio#iconeid#" width="56" height="56"></canvas>
+        <canvas id="darksky#iconeid#" width="56" height="56"></canvas>
     </span>
     <div class="pull-right" style="margin-right: 20px;margin-top: 0px;">
         <div id="windDirection#uid#" style="width: 80px; height: 80px;" class="cmd noRefresh" data-type="info" data-subtype="numeric" data-cmd_id="#windid#"></div>
@@ -22,17 +22,17 @@
     <center>#forecast#</center>
 </div>
 
-<script src="plugins/forecastio/desktop/js/skycons.js"></script>
+<script src="plugins/darksky/desktop/js/skycons.js"></script>
 
 <script>
   var skycons = new Skycons({'color':'white'});
 
-  skycons.set('forecastio#iconeid#', '#icone#');
-  skycons.set('forecastio#iconeid1#', '#icone1#');
-  skycons.set('forecastio#iconeid2#', '#icone2#');
-  skycons.set('forecastio#iconeid3#', '#icone3#');
-  skycons.set('forecastio#iconeid4#', '#icone4#');
-  skycons.set('forecastio#iconeid5#', '#icone5#');
+  skycons.set('darksky#iconeid#', '#icone#');
+  skycons.set('darksky#iconeid1#', '#icone1#');
+  skycons.set('darksky#iconeid2#', '#icone2#');
+  skycons.set('darksky#iconeid3#', '#icone3#');
+  skycons.set('darksky#iconeid4#', '#icone4#');
+  skycons.set('darksky#iconeid5#', '#icone5#');
 
   skycons.play();
 </script>
