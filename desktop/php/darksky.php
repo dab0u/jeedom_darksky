@@ -55,7 +55,13 @@ $eqLogics = eqLogic::byType('darksky');
 
     <ul class="nav nav-tabs" role="tablist">
       <li role="presentation" class="active"><a href="#eqlogictab" aria-controls="home" role="tab" data-toggle="tab"><i class="fa fa-tachometer"></i> {{Equipement}}</a></li>
-      <li role="presentation"><a href="#commandtab" aria-controls="profile" role="tab" data-toggle="tab"><i class="fa fa-list-alt"></i> {{Commandes}}</a></li>
+      <li role="presentation"><a href="#commandtab" aria-controls="profile" role="tab" data-toggle="tab"><i class="fa fa-list-alt"></i> {{Conditions Actuelles}}</a></li>
+      <li role="presentation"><a href="#24tab" aria-controls="profile" role="tab" data-toggle="tab"><i class="fa fa-list-alt"></i> {{Prévisions 24h}}</a></li>
+      <li role="presentation"><a href="#1tab" aria-controls="profile" role="tab" data-toggle="tab"><i class="fa fa-list-alt"></i> {{Prévisions 1h}}</a></li>
+      <li role="presentation"><a href="#2tab" aria-controls="profile" role="tab" data-toggle="tab"><i class="fa fa-list-alt"></i> {{Prévisions 2h}}</a></li>
+      <li role="presentation"><a href="#3tab" aria-controls="profile" role="tab" data-toggle="tab"><i class="fa fa-list-alt"></i> {{Prévisions 3h}}</a></li>
+      <li role="presentation"><a href="#4tab" aria-controls="profile" role="tab" data-toggle="tab"><i class="fa fa-list-alt"></i> {{Prévisions 4h}}</a></li>
+      <li role="presentation"><a href="#5tab" aria-controls="profile" role="tab" data-toggle="tab"><i class="fa fa-list-alt"></i> {{Prévisions 5h}}</a></li>
     </ul>
 
     <div class="tab-content" style="height:calc(100% - 50px);overflow:auto;overflow-x: hidden;">
@@ -161,7 +167,8 @@ $eqLogics = eqLogic::byType('darksky');
       </tbody>
     </table>
 
-    <legend><i class="fa fa-cloud"></i>  {{Prévisions 24H}}</legend>
+  </div>
+    <div role="tabpanel" class="tab-pane" id="24tab">
 
     <table id="24h_cmd" class="table table-bordered table-condensed">
       <thead>
@@ -178,7 +185,8 @@ $eqLogics = eqLogic::byType('darksky');
       </tbody>
     </table>
 
-    <legend><i class="fa fa-cloud"></i>  {{Prévisions H+1}}</legend>
+  </div>
+    <div role="tabpanel" class="tab-pane" id="1tab">
 
     <table id="h1_cmd" class="table table-bordered table-condensed">
       <thead>
@@ -195,7 +203,8 @@ $eqLogics = eqLogic::byType('darksky');
       </tbody>
     </table>
 
-    <legend><i class="fa fa-cloud"></i>  {{Prévisions H+2}}</legend>
+  </div>
+    <div role="tabpanel" class="tab-pane" id="2tab">
 
     <table id="h2_cmd" class="table table-bordered table-condensed">
       <thead>
@@ -212,7 +221,8 @@ $eqLogics = eqLogic::byType('darksky');
       </tbody>
     </table>
 
-    <legend><i class="fa fa-cloud"></i>  {{Prévisions H+3}}</legend>
+  </div>
+    <div role="tabpanel" class="tab-pane" id="3tab">
 
     <table id="h3_cmd" class="table table-bordered table-condensed">
       <thead>
@@ -229,7 +239,8 @@ $eqLogics = eqLogic::byType('darksky');
       </tbody>
     </table>
 
-    <legend><i class="fa fa-cloud"></i>  {{Prévisions H+4}}</legend>
+  </div>
+    <div role="tabpanel" class="tab-pane" id="4tab">
 
     <table id="h4_cmd" class="table table-bordered table-condensed">
       <thead>
@@ -246,7 +257,8 @@ $eqLogics = eqLogic::byType('darksky');
       </tbody>
     </table>
 
-    <legend><i class="fa fa-cloud"></i>  {{Prévisions H+5}}</legend>
+  </div>
+    <div role="tabpanel" class="tab-pane" id="5tab">
 
     <table id="h5_cmd" class="table table-bordered table-condensed">
       <thead>
