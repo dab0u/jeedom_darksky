@@ -1,0 +1,13 @@
+==== Forecast.io, météo temps réel
+
+Ce plugin permet d'obtenir la météo depuis le site Forecast.io qui dispose de données "temps réel"
+
+Le plugin dispose de différentes fréquence de rafraichissement :
+
+  - toutes les 5mn : les informations temps réel
+
+  - toutes les heures : les prévisions à l'heures
+
+  - journalier : les prévisions au jour (météo mais aussi lever et coucher du soleil)
+
+Si un redémarrage de Jeedom se produit, toutes les infos sont récupérées.
