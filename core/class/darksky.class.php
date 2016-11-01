@@ -1823,17 +1823,17 @@ class darksky extends eqLogic {
     );
 
     $return['hour'] = array(
-      'summary' => $parsed_json['hourly']['data']['0']['summary'],
-      'icon' => $parsed_json['hourly']['data']['0']['icon'],
-      'temperature' => $parsed_json['hourly']['data']['0']['temperature'] . '°C',
-      'apparentTemperature' => '(' . $parsed_json['hourly']['data']['0']['apparentTemperature'] . '°C)',
-      'humidity' => $parsed_json['hourly']['data']['0']['humidity']*100 . '%',
-      'precipProbability' => $parsed_json['hourly']['data']['0']['precipProbability']*100 . '%',
-      'windSpeed' => $parsed_json['hourly']['data']['0']['windSpeed'] . 'km/h',
-      'windBearing' => $parsed_json['hourly']['data']['0']['windBearing'] > 179 ? $parsed_json['hourly']['data']['0']['windBearing'] -180 : $windBearing_status = $parsed_json['hourly']['data']['0']['windBearing'] + 180,
-      'cloudCover' => $parsed_json['hourly']['data']['0']['cloudCover']*100 . '%',
-      'pressure' => $parsed_json['hourly']['data']['0']['pressure'] . 'hPa',
-      'ozone' => $parsed_json['hourly']['data']['0']['ozone'] . 'DU',
+      'summary' => $parsed_json['hourly']['data']['1']['summary'],
+      'icon' => $parsed_json['hourly']['data']['1']['icon'],
+      'temperature' => $parsed_json['hourly']['data']['1']['temperature'] . '°C',
+      'apparentTemperature' => '(' . $parsed_json['hourly']['data']['1']['apparentTemperature'] . '°C)',
+      'humidity' => $parsed_json['hourly']['data']['1']['humidity']*100 . '%',
+      'precipProbability' => $parsed_json['hourly']['data']['1']['precipProbability']*100 . '%',
+      'windSpeed' => $parsed_json['hourly']['data']['1']['windSpeed'] . 'km/h',
+      'windBearing' => $parsed_json['hourly']['data']['1']['windBearing'] > 179 ? $parsed_json['hourly']['data']['0']['windBearing'] -180 : $windBearing_status = $parsed_json['hourly']['data']['0']['windBearing'] + 180,
+      'cloudCover' => $parsed_json['hourly']['data']['1']['cloudCover']*100 . '%',
+      'pressure' => $parsed_json['hourly']['data']['1']['pressure'] . 'hPa',
+      'ozone' => $parsed_json['hourly']['data']['1']['ozone'] . 'DU',
     );
 
     $return['day0'] = array(
