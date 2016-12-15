@@ -5,7 +5,7 @@ Oui, le plugin récupère les valeurs de Forecast.io
 --
 
 [panel,primary]
-.Est-ce que le plugin s'appuie sur des plugins tiers ?
+. Is the plugin relies on third-party plugins?
 --
 Oui, il utilise un équipement du plugin geoloc.
 --
