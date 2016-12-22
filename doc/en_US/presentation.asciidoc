@@ -1,6 +1,6 @@
 ==== Forecast.io, real-time weather
 
-Ce plugin permet d'obtenir la météo depuis le site Forecast.io qui dispose de données "temps réel"
+This plugin allows to obtain the weather from the site Forecast.io which has "real time" data
 
 Le plugin dispose de différentes fréquence de rafraichissement :
 
