@@ -2,7 +2,7 @@
 
 This plugin allows to obtain the weather from the site Forecast.io which has "real time" data
 
-Le plugin dispose de différentes fréquence de rafraichissement :
+The plugin has different refresh rate:
 
   - toutes les 5mn : les informations temps réel
 

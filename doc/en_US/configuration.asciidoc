@@ -2,7 +2,7 @@
 
 The plugin does not have general configuration.
 
-Il faut ajouter un équipement et configurer les 2 paramètres :
+Must add equipment and 2 settings:
 
   - quel équipement du plugin geoloc servira pour les coordonnées de la météo à récupérer
 
