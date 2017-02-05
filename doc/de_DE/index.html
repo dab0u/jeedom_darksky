@@ -417,7 +417,7 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <ul class="sectlevel1">
 <li><a href="#_beschreibung">1. Beschreibung</a>
 <ul class="sectlevel3">
-<li><a href="#_forecast_io_météo_temps_réel">1.1. Forecast.io, météo temps réel</a></li>
+<li><a href="#_forecast_io_echtzeit_wetter">1.1. Forecast.io, Echtzeit-Wetter</a></li>
 </ul>
 </li>
 <li><a href="#_konfiguration">2. Konfiguration</a>
@@ -435,28 +435,28 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <h2 id="_beschreibung">1. Beschreibung</h2>
 <div class="sectionbody">
 <div class="sect3">
-<h4 id="_forecast_io_météo_temps_réel">1.1. Forecast.io, météo temps réel</h4>
+<h4 id="_forecast_io_echtzeit_wetter">1.1. Forecast.io, Echtzeit-Wetter</h4>
 <div class="paragraph">
-<p>Ce plugin permet d&#8217;obtenir la météo depuis le site Forecast.io qui dispose de données "temps réel"</p>
+<p>Dieses Plugin ermöglicht die Wettervorhersage der Website Forecast.io anzuzeigen, die Daten in "Echtzeit" verfügt.</p>
 </div>
 <div class="paragraph">
-<p>Le plugin dispose de différentes fréquence de rafraichissement :</p>
+<p>Das Plugin hat unterschiedliche Aktualisierungsrate :</p>
 </div>
 <div class="ulist">
 <ul>
 <li>
-<p>toutes les 5mn : les informations temps réel</p>
+<p>alle 5 Minuten : Echtzeit-Informationen</p>
 </li>
 <li>
-<p>toutes les heures : les prévisions à l&#8217;heures</p>
+<p>jede Stunde : die Prognosen in einer Stunde</p>
 </li>
 <li>
-<p>journalier : les prévisions au jour (météo mais aussi lever et coucher du soleil)</p>
+<p>täglich : die Prognosen am Tag (Wetter aber auch Sonnenauf- und Untergang)</p>
 </li>
 </ul>
 </div>
 <div class="paragraph">
-<p>Si un redémarrage de Jeedom se produit, toutes les infos sont récupérées.</p>
+<p>Wenn ein Jeedom Neustart eintritt, werden die Informationen alle abgerufen.</p>
 </div>
 <hr>
 </div>
@@ -471,15 +471,12 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <p>Das Plugin enthält keine allgemeine Konfiguration.</p>
 </div>
 <div class="paragraph">
-<p>Il faut ajouter un équipement et configurer les 2 paramètres :</p>
+<p>Man muss ein Gerät hinzufügen und die 2 Parameter konfigurieren :</p>
 </div>
 <div class="ulist">
 <ul>
 <li>
-<p>quel équipement du plugin geoloc servira pour les coordonnées de la météo à récupérer</p>
-</li>
-<li>
-<p>la clef API de Forecast.io (<a href="https://developer.forecast.io/" class="bare">https://developer.forecast.io/</a>)</p>
+<p>der Forecast.io API-Schlüssel (<a href="https://developer.forecast.io/" class="bare">https://developer.forecast.io/</a>)</p>
 </li>
 </ul>
 </div>
@@ -493,21 +490,21 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <div class="openblock panel">
 <div class="title">Stützt sich das Plugin auf APIs Dritter ?</div><div class="content">
 <div class="paragraph">
-<p>Oui, le plugin récupère les valeurs de Forecast.io</p>
+<p>Ja, das Plugin ruft die Werte von Forecast.io ab.</p>
 </div>
 </div>
 </div>
 <div class="openblock panel">
-<div class="title">Est-ce que le plugin s&#8217;appuie sur des plugins tiers ?</div><div class="content">
+<div class="title">Berut das Plugin auf Plugins von Drittanbieter ?</div><div class="content">
 <div class="paragraph">
-<p>Oui, il utilise un équipement du plugin geoloc.</p>
+<p>Ja, es verwendet ein Gerät vom Geoloc Plugin.</p>
 </div>
 </div>
 </div>
 <div class="openblock panel">
-<div class="title">Comment utiliser les informations de lever/coucher du soleil ?</div><div class="content">
+<div class="title">Wie werden die informationen von Sonnen Auf/Untergang benutzt ?</div><div class="content">
 <div class="paragraph">
-<p>Il faut utiliser un scénario avec pour déclencheur le lever ou coucher du soleil. Puis utiliser des blocs à condition 'A'</p>
+<p>Sie müssen ein Szenario verwenden, das den Sonnenaufgang oder Sonnenuntergang auslöst. Dann die Blöcke der Bedingung 'A'  benutzen</p>
 </div>
 </div>
 </div>
@@ -520,7 +517,7 @@ body.book #toc,body.book #preamble,body.book h1.sect0,body.book .sect1>h2{page-b
 <div class="openblock panel">
 <div class="title">Ich bekomme keine Informationen, die zurückreichen</div><div class="content">
 <div class="paragraph">
-<p>Il faut bien créer un équipement et remplir les informations du lieu pour lequel on souhaite avoir la météo.</p>
+<p>Man muß ein Gerät erstellen und die Informationen des Ortes ausfüllen, für den man die Wettervorhersage haben möchte.</p>
 </div>
 </div>
 </div>

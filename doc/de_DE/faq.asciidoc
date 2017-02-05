@@ -1,17 +1,17 @@
 [panel,primary]
 .Stützt sich das Plugin auf APIs Dritter ?
 --
-Oui, le plugin récupère les valeurs de Forecast.io
+Ja, das Plugin ruft die Werte von Forecast.io ab.
 --
 
 [panel,primary]
-.Est-ce que le plugin s'appuie sur des plugins tiers ?
+.Berut das Plugin auf Plugins von Drittanbieter ?
 --
-Oui, il utilise un équipement du plugin geoloc.
+Ja, es verwendet ein Gerät vom Geoloc Plugin.
 --
 
 [panel,primary]
-.Comment utiliser les informations de lever/coucher du soleil ?
+.Wie werden die informationen von Sonnen Auf/Untergang benutzt ?
 --
-Il faut utiliser un scénario avec pour déclencheur le lever ou coucher du soleil. Puis utiliser des blocs à condition 'A'
+Sie müssen ein Szenario verwenden, das den Sonnenaufgang oder Sonnenuntergang auslöst. Dann die Blöcke der Bedingung 'A'  benutzen
 --

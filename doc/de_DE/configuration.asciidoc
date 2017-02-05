@@ -2,8 +2,8 @@
 
 Das Plugin enthält keine allgemeine Konfiguration.
 
-Il faut ajouter un équipement et configurer les 2 paramètres :
+Man muss ein Gerät hinzufügen und die 2 Parameter konfigurieren :
 
-  - quel équipement du plugin geoloc servira pour les coordonnées de la météo à récupérer
+   
 
-  - la clef API de Forecast.io (https://developer.forecast.io/)
+  - der Forecast.io API-Schlüssel (https://developer.forecast.io/)
