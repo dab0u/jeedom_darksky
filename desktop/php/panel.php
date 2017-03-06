@@ -395,7 +395,7 @@ $(function () {
 				color: '#68CFE8',
 				yAxis: 1,
 				tooltip: {
-					valueSuffix: ' mn/h'
+					valueSuffix: ' mm/h'
 				},
 				data: []
 			},
