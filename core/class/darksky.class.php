@@ -490,7 +490,7 @@ class darksky extends eqLogic {
       $darkskyCmd->setType('info');
       $darkskyCmd->setSubType('numeric');
     }
-    $darkskyCmd->setConfiguration('category','actual');
+    $darkskyCmd->setConfiguration('category','h1');
     $darkskyCmd->save();
 
     //status H+2
@@ -695,7 +695,7 @@ class darksky extends eqLogic {
       $darkskyCmd->setType('info');
       $darkskyCmd->setSubType('numeric');
     }
-    $darkskyCmd->setConfiguration('category','actual');
+    $darkskyCmd->setConfiguration('category','h2');
     $darkskyCmd->save();
 
     //status H+3
@@ -900,7 +900,7 @@ class darksky extends eqLogic {
       $darkskyCmd->setType('info');
       $darkskyCmd->setSubType('numeric');
     }
-    $darkskyCmd->setConfiguration('category','actual');
+    $darkskyCmd->setConfiguration('category','h3');
     $darkskyCmd->save();
 
     //status H+4
@@ -1105,7 +1105,7 @@ class darksky extends eqLogic {
       $darkskyCmd->setType('info');
       $darkskyCmd->setSubType('numeric');
     }
-    $darkskyCmd->setConfiguration('category','actual');
+    $darkskyCmd->setConfiguration('category','h4');
     $darkskyCmd->save();
 
     //status H+5
@@ -1310,7 +1310,7 @@ class darksky extends eqLogic {
       $darkskyCmd->setType('info');
       $darkskyCmd->setSubType('numeric');
     }
-    $darkskyCmd->setConfiguration('category','actual');
+    $darkskyCmd->setConfiguration('category','h5');
     $darkskyCmd->save();
 
     $darkskyCmd = darkskyCmd::byEqLogicIdAndLogicalId($this->getId(),'sunriseTime');

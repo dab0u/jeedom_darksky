@@ -1,19 +1,19 @@
 
 /* This file is part of Jeedom.
- *
- * Jeedom is free software: you can redistribute it and/or modify
- * it under the terms of the GNU General Public License as published by
- * the Free Software Foundation, either version 3 of the License, or
- * (at your option) any later version.
- *
- * Jeedom is distributed in the hope that it will be useful,
- * but WITHOUT ANY WARRANTY; without even the implied warranty of
- * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
- * GNU General Public License for more details.
- *
- * You should have received a copy of the GNU General Public License
- * along with Jeedom. If not, see <http://www.gnu.org/licenses/>.
- */
+*
+* Jeedom is free software: you can redistribute it and/or modify
+* it under the terms of the GNU General Public License as published by
+* the Free Software Foundation, either version 3 of the License, or
+* (at your option) any later version.
+*
+* Jeedom is distributed in the hope that it will be useful,
+* but WITHOUT ANY WARRANTY; without even the implied warranty of
+* MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the
+* GNU General Public License for more details.
+*
+* You should have received a copy of the GNU General Public License
+* along with Jeedom. If not, see <http://www.gnu.org/licenses/>.
+*/
 
 $("#table_cmd").delegate(".listEquipementInfo", 'click', function() {
     var el = $(this);
@@ -38,19 +38,13 @@ function addCmdToTable(_cmd) {
         var disabled = (init(_cmd.configuration.virtualAction) == '1') ? 'disabled' : '';
         var tr = '<tr class="cmd" data-cmd_id="' + init(_cmd.id) + '">';
         tr += '<td>';
-			tr += '<span class="cmdAttr" data-l1key="id"></span>';
+        tr += '<span class="cmdAttr" data-l1key="id"></span>';
         tr += '</td>';
         tr += '<td>';
-			tr += '<span class="cmdAttr" data-l1key="name"></span></td>';
-        tr += '<td>';
-        tr += '<span class="cmdAttr" data-l1key="configuration" data-l2key="value"></span>';
-        if (init(_cmd.subType) == "numeric") {
-          tr += '<span class="cmdAttr" data-l1key="unite"></span> ';
-        }
-        tr += '</td>';
+        tr += '<span class="cmdAttr" data-l1key="name"></span></td>';
         tr += '<td>';
         if (init(_cmd.subType) == "numeric") {
- tr += '<span><label class="checkbox-inline"><input type="checkbox" class="cmdAttr checkbox-inline" data-l1key="isHistorized" checked/>{{Historiser}}</label></span> ';
+            tr += '<span><label class="checkbox-inline"><input type="checkbox" class="cmdAttr checkbox-inline" data-l1key="isHistorized" checked/>{{Historiser}}</label></span> ';
         }
         tr += '</td>';
         tr += '<td>';
@@ -68,19 +62,13 @@ function addCmdToTable(_cmd) {
         var disabled = (init(_cmd.configuration.virtualAction) == '1') ? 'disabled' : '';
         var tr = '<tr class="cmd" data-cmd_id="' + init(_cmd.id) + '">';
         tr += '<td>';
-			tr += '<span class="cmdAttr" data-l1key="id"></span>';
+        tr += '<span class="cmdAttr" data-l1key="id"></span>';
         tr += '</td>';
         tr += '<td>';
-			tr += '<span class="cmdAttr" data-l1key="name"></span></td>';
-        tr += '<td>';
-        tr += '<span class="cmdAttr" data-l1key="configuration" data-l2key="value"></span>';
-        if (init(_cmd.subType) == "numeric") {
-          tr += '<span class="cmdAttr" data-l1key="unite"></span> ';
-        }
-        tr += '</td>';
+        tr += '<span class="cmdAttr" data-l1key="name"></span></td>';
         tr += '<td>';
         if (init(_cmd.subType) == "numeric") {
- tr += '<span><label class="checkbox-inline"><input type="checkbox" class="cmdAttr checkbox-inline" data-l1key="isHistorized" checked/>{{Historiser}}</label></span> ';
+            tr += '<span><label class="checkbox-inline"><input type="checkbox" class="cmdAttr checkbox-inline" data-l1key="isHistorized" checked/>{{Historiser}}</label></span> ';
         }
         tr += '</td>';
         tr += '<td>';
@@ -98,19 +86,13 @@ function addCmdToTable(_cmd) {
         var disabled = (init(_cmd.configuration.virtualAction) == '1') ? 'disabled' : '';
         var tr = '<tr class="cmd" data-cmd_id="' + init(_cmd.id) + '">';
         tr += '<td>';
-			tr += '<span class="cmdAttr" data-l1key="id"></span>';
+        tr += '<span class="cmdAttr" data-l1key="id"></span>';
         tr += '</td>';
         tr += '<td>';
-			tr += '<span class="cmdAttr" data-l1key="name"></span></td>';
-        tr += '<td>';
-        tr += '<span class="cmdAttr" data-l1key="configuration" data-l2key="value"></span>';
-        if (init(_cmd.subType) == "numeric") {
-          tr += '<span class="cmdAttr" data-l1key="unite"></span> ';
-        }
-        tr += '</td>';
+        tr += '<span class="cmdAttr" data-l1key="name"></span></td>';
         tr += '<td>';
         if (init(_cmd.subType) == "numeric") {
- tr += '<span><label class="checkbox-inline"><input type="checkbox" class="cmdAttr checkbox-inline" data-l1key="isHistorized" checked/>{{Historiser}}</label></span> ';
+            tr += '<span><label class="checkbox-inline"><input type="checkbox" class="cmdAttr checkbox-inline" data-l1key="isHistorized" checked/>{{Historiser}}</label></span> ';
         }
         tr += '</td>';
         tr += '<td>';
@@ -128,19 +110,13 @@ function addCmdToTable(_cmd) {
         var disabled = (init(_cmd.configuration.virtualAction) == '1') ? 'disabled' : '';
         var tr = '<tr class="cmd" data-cmd_id="' + init(_cmd.id) + '">';
         tr += '<td>';
-			tr += '<span class="cmdAttr" data-l1key="id"></span>';
+        tr += '<span class="cmdAttr" data-l1key="id"></span>';
         tr += '</td>';
         tr += '<td>';
-			tr += '<span class="cmdAttr" data-l1key="name"></span></td>';
-        tr += '<td>';
-        tr += '<span class="cmdAttr" data-l1key="configuration" data-l2key="value"></span>';
-        if (init(_cmd.subType) == "numeric") {
-          tr += '<span class="cmdAttr" data-l1key="unite"></span> ';
-        }
-        tr += '</td>';
+        tr += '<span class="cmdAttr" data-l1key="name"></span></td>';
         tr += '<td>';
         if (init(_cmd.subType) == "numeric") {
- tr += '<span><label class="checkbox-inline"><input type="checkbox" class="cmdAttr checkbox-inline" data-l1key="isHistorized" checked/>{{Historiser}}</label></span> ';
+            tr += '<span><label class="checkbox-inline"><input type="checkbox" class="cmdAttr checkbox-inline" data-l1key="isHistorized" checked/>{{Historiser}}</label></span> ';
         }
         tr += '</td>';
         tr += '<td>';
@@ -158,19 +134,13 @@ function addCmdToTable(_cmd) {
         var disabled = (init(_cmd.configuration.virtualAction) == '1') ? 'disabled' : '';
         var tr = '<tr class="cmd" data-cmd_id="' + init(_cmd.id) + '">';
         tr += '<td>';
-			tr += '<span class="cmdAttr" data-l1key="id"></span>';
+        tr += '<span class="cmdAttr" data-l1key="id"></span>';
         tr += '</td>';
         tr += '<td>';
-			tr += '<span class="cmdAttr" data-l1key="name"></span></td>';
-        tr += '<td>';
-        tr += '<span class="cmdAttr" data-l1key="configuration" data-l2key="value"></span>';
-        if (init(_cmd.subType) == "numeric") {
-          tr += '<span class="cmdAttr" data-l1key="unite"></span> ';
-        }
-        tr += '</td>';
+        tr += '<span class="cmdAttr" data-l1key="name"></span></td>';
         tr += '<td>';
         if (init(_cmd.subType) == "numeric") {
- tr += '<span><label class="checkbox-inline"><input type="checkbox" class="cmdAttr checkbox-inline" data-l1key="isHistorized" checked/>{{Historiser}}</label></span> ';
+            tr += '<span><label class="checkbox-inline"><input type="checkbox" class="cmdAttr checkbox-inline" data-l1key="isHistorized" checked/>{{Historiser}}</label></span> ';
         }
         tr += '</td>';
         tr += '<td>';
@@ -188,19 +158,13 @@ function addCmdToTable(_cmd) {
         var disabled = (init(_cmd.configuration.virtualAction) == '1') ? 'disabled' : '';
         var tr = '<tr class="cmd" data-cmd_id="' + init(_cmd.id) + '">';
         tr += '<td>';
-			tr += '<span class="cmdAttr" data-l1key="id"></span>';
+        tr += '<span class="cmdAttr" data-l1key="id"></span>';
         tr += '</td>';
         tr += '<td>';
-			tr += '<span class="cmdAttr" data-l1key="name"></span></td>';
-        tr += '<td>';
-        tr += '<span class="cmdAttr" data-l1key="configuration" data-l2key="value"></span>';
-        if (init(_cmd.subType) == "numeric") {
-          tr += '<span class="cmdAttr" data-l1key="unite"></span> ';
-        }
-        tr += '</td>';
+        tr += '<span class="cmdAttr" data-l1key="name"></span></td>';
         tr += '<td>';
         if (init(_cmd.subType) == "numeric") {
- tr += '<span><label class="checkbox-inline"><input type="checkbox" class="cmdAttr checkbox-inline" data-l1key="isHistorized" checked/>{{Historiser}}</label></span> ';
+            tr += '<span><label class="checkbox-inline"><input type="checkbox" class="cmdAttr checkbox-inline" data-l1key="isHistorized" checked/>{{Historiser}}</label></span> ';
         }
         tr += '</td>';
         tr += '<td>';
@@ -218,19 +182,13 @@ function addCmdToTable(_cmd) {
         var disabled = (init(_cmd.configuration.virtualAction) == '1') ? 'disabled' : '';
         var tr = '<tr class="cmd" data-cmd_id="' + init(_cmd.id) + '">';
         tr += '<td>';
-			tr += '<span class="cmdAttr" data-l1key="id"></span>';
+        tr += '<span class="cmdAttr" data-l1key="id"></span>';
         tr += '</td>';
         tr += '<td>';
-			tr += '<span class="cmdAttr" data-l1key="name"></span></td>';
-        tr += '<td>';
-        tr += '<span class="cmdAttr" data-l1key="configuration" data-l2key="value"></span>';
-        if (init(_cmd.subType) == "numeric") {
-          tr += '<span class="cmdAttr" data-l1key="unite"></span> ';
-        }
-        tr += '</td>';
+        tr += '<span class="cmdAttr" data-l1key="name"></span></td>';
         tr += '<td>';
         if (init(_cmd.subType) == "numeric") {
- tr += '<span><label class="checkbox-inline"><input type="checkbox" class="cmdAttr checkbox-inline" data-l1key="isHistorized" checked/>{{Historiser}}</label></span> ';
+            tr += '<span><label class="checkbox-inline"><input type="checkbox" class="cmdAttr checkbox-inline" data-l1key="isHistorized" checked/>{{Historiser}}</label></span> ';
         }
         tr += '</td>';
         tr += '<td>';
