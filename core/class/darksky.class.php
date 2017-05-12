@@ -276,6 +276,18 @@ class darksky extends eqLogic {
     $darkskyCmd->setUnite( 'DU' );
     $darkskyCmd->save();
 
+    $darkskyCmd = darkskyCmd::byEqLogicIdAndLogicalId($this->getId(),'uvIndex');
+    if (!is_object($darkskyCmd)) {
+      $darkskyCmd = new darkskyCmd();
+      $darkskyCmd->setName(__('Index UV', __FILE__));
+      $darkskyCmd->setEqLogic_id($this->getId());
+      $darkskyCmd->setLogicalId('uvIndex');
+      $darkskyCmd->setType('info');
+      $darkskyCmd->setSubType('numeric');
+    }
+    $darkskyCmd->setConfiguration('category','actual');
+    $darkskyCmd->save();
+
     //info H+1
     $darkskyCmd = darkskyCmd::byEqLogicIdAndLogicalId($this->getId(),'summaryh1');
     if (!is_object($darkskyCmd)) {
@@ -467,6 +479,18 @@ class darksky extends eqLogic {
     }
     $darkskyCmd->setConfiguration('category','h1');
     $darkskyCmd->setUnite( 'DU' );
+    $darkskyCmd->save();
+
+    $darkskyCmd = darkskyCmd::byEqLogicIdAndLogicalId($this->getId(),'uvIndexh1');
+    if (!is_object($darkskyCmd)) {
+      $darkskyCmd = new darkskyCmd();
+      $darkskyCmd->setName(__('Index UV H+1', __FILE__));
+      $darkskyCmd->setEqLogic_id($this->getId());
+      $darkskyCmd->setLogicalId('uvIndexh1');
+      $darkskyCmd->setType('info');
+      $darkskyCmd->setSubType('numeric');
+    }
+    $darkskyCmd->setConfiguration('category','actual');
     $darkskyCmd->save();
 
     //status H+2
@@ -662,6 +686,18 @@ class darksky extends eqLogic {
     $darkskyCmd->setUnite( 'DU' );
     $darkskyCmd->save();
 
+    $darkskyCmd = darkskyCmd::byEqLogicIdAndLogicalId($this->getId(),'uvIndexh2');
+    if (!is_object($darkskyCmd)) {
+      $darkskyCmd = new darkskyCmd();
+      $darkskyCmd->setName(__('Index UV H+2', __FILE__));
+      $darkskyCmd->setEqLogic_id($this->getId());
+      $darkskyCmd->setLogicalId('uvIndexh2');
+      $darkskyCmd->setType('info');
+      $darkskyCmd->setSubType('numeric');
+    }
+    $darkskyCmd->setConfiguration('category','actual');
+    $darkskyCmd->save();
+
     //status H+3
     $darkskyCmd = darkskyCmd::byEqLogicIdAndLogicalId($this->getId(),'summaryh3');
     if (!is_object($darkskyCmd)) {
@@ -853,6 +889,18 @@ class darksky extends eqLogic {
     }
     $darkskyCmd->setConfiguration('category','h3');
     $darkskyCmd->setUnite( 'DU' );
+    $darkskyCmd->save();
+
+    $darkskyCmd = darkskyCmd::byEqLogicIdAndLogicalId($this->getId(),'uvIndexh3');
+    if (!is_object($darkskyCmd)) {
+      $darkskyCmd = new darkskyCmd();
+      $darkskyCmd->setName(__('Index UV H+3', __FILE__));
+      $darkskyCmd->setEqLogic_id($this->getId());
+      $darkskyCmd->setLogicalId('uvIndexh3');
+      $darkskyCmd->setType('info');
+      $darkskyCmd->setSubType('numeric');
+    }
+    $darkskyCmd->setConfiguration('category','actual');
     $darkskyCmd->save();
 
     //status H+4
@@ -1048,6 +1096,18 @@ class darksky extends eqLogic {
     $darkskyCmd->setUnite( 'DU' );
     $darkskyCmd->save();
 
+    $darkskyCmd = darkskyCmd::byEqLogicIdAndLogicalId($this->getId(),'uvIndexh4');
+    if (!is_object($darkskyCmd)) {
+      $darkskyCmd = new darkskyCmd();
+      $darkskyCmd->setName(__('Index UV H+4', __FILE__));
+      $darkskyCmd->setEqLogic_id($this->getId());
+      $darkskyCmd->setLogicalId('uvIndexh4');
+      $darkskyCmd->setType('info');
+      $darkskyCmd->setSubType('numeric');
+    }
+    $darkskyCmd->setConfiguration('category','actual');
+    $darkskyCmd->save();
+
     //status H+5
     $darkskyCmd = darkskyCmd::byEqLogicIdAndLogicalId($this->getId(),'summaryh5');
     if (!is_object($darkskyCmd)) {
@@ -1241,6 +1301,18 @@ class darksky extends eqLogic {
     $darkskyCmd->setUnite( 'DU' );
     $darkskyCmd->save();
 
+    $darkskyCmd = darkskyCmd::byEqLogicIdAndLogicalId($this->getId(),'uvIndexh5');
+    if (!is_object($darkskyCmd)) {
+      $darkskyCmd = new darkskyCmd();
+      $darkskyCmd->setName(__('Index UV H+5', __FILE__));
+      $darkskyCmd->setEqLogic_id($this->getId());
+      $darkskyCmd->setLogicalId('uvIndexh5');
+      $darkskyCmd->setType('info');
+      $darkskyCmd->setSubType('numeric');
+    }
+    $darkskyCmd->setConfiguration('category','actual');
+    $darkskyCmd->save();
+
     $darkskyCmd = darkskyCmd::byEqLogicIdAndLogicalId($this->getId(),'sunriseTime');
     if (!is_object($darkskyCmd)) {
       $darkskyCmd = new darkskyCmd();
@@ -1365,6 +1437,30 @@ class darksky extends eqLogic {
     $darkskyCmd->setUnite( '°C' );
     $darkskyCmd->save();
 
+    $darkskyCmd = darkskyCmd::byEqLogicIdAndLogicalId($this->getId(),'uvIndex_1');
+    if (!is_object($darkskyCmd)) {
+      $darkskyCmd = new darkskyCmd();
+      $darkskyCmd->setName(__('Index UV Jour', __FILE__));
+      $darkskyCmd->setEqLogic_id($this->getId());
+      $darkskyCmd->setLogicalId('uvIndex_1');
+      $darkskyCmd->setType('info');
+      $darkskyCmd->setSubType('numeric');
+    }
+    $darkskyCmd->setConfiguration('category','daily');
+    $darkskyCmd->save();
+
+    $darkskyCmd = darkskyCmd::byEqLogicIdAndLogicalId($this->getId(),'precipProbability_1');
+    if (!is_object($darkskyCmd)) {
+      $darkskyCmd = new darkskyCmd();
+      $darkskyCmd->setName(__('Propbalitié Pluie Jour', __FILE__));
+      $darkskyCmd->setEqLogic_id($this->getId());
+      $darkskyCmd->setLogicalId('precipProbability_1');
+      $darkskyCmd->setType('info');
+      $darkskyCmd->setSubType('numeric');
+    }
+    $darkskyCmd->setConfiguration('category','daily');
+    $darkskyCmd->save();
+
     $darkskyCmd = darkskyCmd::byEqLogicIdAndLogicalId($this->getId(),'summary_1');
     if (!is_object($darkskyCmd)) {
       $darkskyCmd = new darkskyCmd();
@@ -1413,6 +1509,30 @@ class darksky extends eqLogic {
     }
     $darkskyCmd->setConfiguration('category','daily');
     $darkskyCmd->setUnite( '°C' );
+    $darkskyCmd->save();
+
+    $darkskyCmd = darkskyCmd::byEqLogicIdAndLogicalId($this->getId(),'uvIndex_2');
+    if (!is_object($darkskyCmd)) {
+      $darkskyCmd = new darkskyCmd();
+      $darkskyCmd->setName(__('Index UV Jour +1', __FILE__));
+      $darkskyCmd->setEqLogic_id($this->getId());
+      $darkskyCmd->setLogicalId('uvIndex_2');
+      $darkskyCmd->setType('info');
+      $darkskyCmd->setSubType('numeric');
+    }
+    $darkskyCmd->setConfiguration('category','daily');
+    $darkskyCmd->save();
+
+    $darkskyCmd = darkskyCmd::byEqLogicIdAndLogicalId($this->getId(),'precipProbability_2');
+    if (!is_object($darkskyCmd)) {
+      $darkskyCmd = new darkskyCmd();
+      $darkskyCmd->setName(__('Propbalitié Pluie Jour +1', __FILE__));
+      $darkskyCmd->setEqLogic_id($this->getId());
+      $darkskyCmd->setLogicalId('precipProbability_2');
+      $darkskyCmd->setType('info');
+      $darkskyCmd->setSubType('numeric');
+    }
+    $darkskyCmd->setConfiguration('category','daily');
     $darkskyCmd->save();
 
     $darkskyCmd = darkskyCmd::byEqLogicIdAndLogicalId($this->getId(),'summary_2');
@@ -1465,6 +1585,30 @@ class darksky extends eqLogic {
     $darkskyCmd->setUnite( '°C' );
     $darkskyCmd->save();
 
+    $darkskyCmd = darkskyCmd::byEqLogicIdAndLogicalId($this->getId(),'uvIndex_3');
+    if (!is_object($darkskyCmd)) {
+      $darkskyCmd = new darkskyCmd();
+      $darkskyCmd->setName(__('Index UV Jour +2', __FILE__));
+      $darkskyCmd->setEqLogic_id($this->getId());
+      $darkskyCmd->setLogicalId('uvIndex_3');
+      $darkskyCmd->setType('info');
+      $darkskyCmd->setSubType('numeric');
+    }
+    $darkskyCmd->setConfiguration('category','daily');
+    $darkskyCmd->save();
+
+    $darkskyCmd = darkskyCmd::byEqLogicIdAndLogicalId($this->getId(),'precipProbability_3');
+    if (!is_object($darkskyCmd)) {
+      $darkskyCmd = new darkskyCmd();
+      $darkskyCmd->setName(__('Propbalitié Pluie Jour +2', __FILE__));
+      $darkskyCmd->setEqLogic_id($this->getId());
+      $darkskyCmd->setLogicalId('precipProbability_3');
+      $darkskyCmd->setType('info');
+      $darkskyCmd->setSubType('numeric');
+    }
+    $darkskyCmd->setConfiguration('category','daily');
+    $darkskyCmd->save();
+
     $darkskyCmd = darkskyCmd::byEqLogicIdAndLogicalId($this->getId(),'summary_3');
     if (!is_object($darkskyCmd)) {
       $darkskyCmd = new darkskyCmd();
@@ -1515,6 +1659,30 @@ class darksky extends eqLogic {
     $darkskyCmd->setUnite( '°C' );
     $darkskyCmd->save();
 
+    $darkskyCmd = darkskyCmd::byEqLogicIdAndLogicalId($this->getId(),'uvIndex_4');
+    if (!is_object($darkskyCmd)) {
+      $darkskyCmd = new darkskyCmd();
+      $darkskyCmd->setName(__('Index UV Jour +3', __FILE__));
+      $darkskyCmd->setEqLogic_id($this->getId());
+      $darkskyCmd->setLogicalId('uvIndex_4');
+      $darkskyCmd->setType('info');
+      $darkskyCmd->setSubType('numeric');
+    }
+    $darkskyCmd->setConfiguration('category','daily');
+    $darkskyCmd->save();
+
+    $darkskyCmd = darkskyCmd::byEqLogicIdAndLogicalId($this->getId(),'precipProbability_4');
+    if (!is_object($darkskyCmd)) {
+      $darkskyCmd = new darkskyCmd();
+      $darkskyCmd->setName(__('Propbalitié Pluie Jour +3', __FILE__));
+      $darkskyCmd->setEqLogic_id($this->getId());
+      $darkskyCmd->setLogicalId('precipProbability_4');
+      $darkskyCmd->setType('info');
+      $darkskyCmd->setSubType('numeric');
+    }
+    $darkskyCmd->setConfiguration('category','daily');
+    $darkskyCmd->save();
+
     $darkskyCmd = darkskyCmd::byEqLogicIdAndLogicalId($this->getId(),'summary_4');
     if (!is_object($darkskyCmd)) {
       $darkskyCmd = new darkskyCmd();
@@ -1563,6 +1731,30 @@ class darksky extends eqLogic {
     }
     $darkskyCmd->setConfiguration('category','daily');
     $darkskyCmd->setUnite( '°C' );
+    $darkskyCmd->save();
+
+    $darkskyCmd = darkskyCmd::byEqLogicIdAndLogicalId($this->getId(),'uvIndex_5');
+    if (!is_object($darkskyCmd)) {
+      $darkskyCmd = new darkskyCmd();
+      $darkskyCmd->setName(__('Index UV Jour +4', __FILE__));
+      $darkskyCmd->setEqLogic_id($this->getId());
+      $darkskyCmd->setLogicalId('uvIndex_5');
+      $darkskyCmd->setType('info');
+      $darkskyCmd->setSubType('numeric');
+    }
+    $darkskyCmd->setConfiguration('category','daily');
+    $darkskyCmd->save();
+
+    $darkskyCmd = darkskyCmd::byEqLogicIdAndLogicalId($this->getId(),'precipProbability_5');
+    if (!is_object($darkskyCmd)) {
+      $darkskyCmd = new darkskyCmd();
+      $darkskyCmd->setName(__('Propbalitié Pluie Jour +4', __FILE__));
+      $darkskyCmd->setEqLogic_id($this->getId());
+      $darkskyCmd->setLogicalId('precipProbability_5');
+      $darkskyCmd->setType('info');
+      $darkskyCmd->setSubType('numeric');
+    }
+    $darkskyCmd->setConfiguration('category','daily');
     $darkskyCmd->save();
 
     $darkskyCmd = darkskyCmd::byEqLogicIdAndLogicalId($this->getId(),'summary_5');
@@ -1629,7 +1821,7 @@ class darksky extends eqLogic {
     }
     $apikey = $this->getConfiguration('apikey', '');
     $lang = explode('_',config::byKey('language'));
-    $url = 'https://api.darksky.net/forecast/' . $apikey .'/' . $geolocval . '?units=ca&lang=' . $lang[0];
+    $url = 'https://api.darksky.net/forecast/' . $apikey .'/' . $geolocval . '?units=ca&lang=' . $lang[0] . '&solar=1';
     log::add('darksky', 'debug', $url);
     $json_string = file_get_contents($url);
     $parsed_json = json_decode($json_string, true);
@@ -1639,13 +1831,8 @@ class darksky extends eqLogic {
     if ($frequence == 'daily' || $frequence == 'all') {
       foreach ($parsed_json['daily']['data'][0] as $key => $value) {
         if ($key == 'sunsetTime' || $key == 'sunriseTime') {
-          $darkskyCmd = darkskyCmd::byEqLogicIdAndLogicalId($this->getId(),$key);
-          if (is_object($darkskyCmd)) {
             $value = date('Hi',$value);
-            $darkskyCmd->setConfiguration('value',$value);
-            $darkskyCmd->save();
-            $darkskyCmd->event($value);
-          }
+            $this->checkAndUpdateCmd($key, $value);
         }
       }
     }
@@ -1653,12 +1840,7 @@ class darksky extends eqLogic {
     if ($frequence == 'hourly' || $frequence == 'all') {
       foreach ($parsed_json['daily']['data'][0] as $key => $value) {
         if ($key == 'apparentTemperatureMax' || $key == 'apparentTemperatureMin' || $key == 'temperatureMax' || $key == 'temperatureMin') {
-          $darkskyCmd = darkskyCmd::byEqLogicIdAndLogicalId($this->getId(),$key);
-          if (is_object($darkskyCmd)) {
-            $darkskyCmd->setConfiguration('value',$value);
-            $darkskyCmd->save();
-            $darkskyCmd->event($value);
-          }
+          $this->checkAndUpdateCmd($key, $value);
         }
       }
       //daily
@@ -1666,13 +1848,8 @@ class darksky extends eqLogic {
       while ($i < 5) {
         $j = $i +1;
         foreach ($parsed_json['daily']['data'][$i] as $key => $value) {
-          if ($key == 'temperatureMax' || $key == 'temperatureMin' || $key == 'summary' || $key == 'icon') {
-            $darkskyCmd = darkskyCmd::byEqLogicIdAndLogicalId($this->getId(),$key . '_' . $j);
-            if (is_object($darkskyCmd)) {
-              $darkskyCmd->setConfiguration('value',$value);
-              $darkskyCmd->save();
-              $darkskyCmd->event($value);
-            }
+          if ($key == 'temperatureMax' || $key == 'temperatureMin' || $key == 'summary' || $key == 'icon' || $key == 'uvIndex' || $key == 'precipProbability') {
+            $this->checkAndUpdateCmd($key . '_' . $j, $value);
           }
         }
         $i++;
@@ -1684,13 +1861,11 @@ class darksky extends eqLogic {
       $i = 1;
       while ($i < 6) {
         foreach ($parsed_json['hourly']['data'][$i] as $key => $value) {
-          $darkskyCmd = darkskyCmd::byEqLogicIdAndLogicalId($this->getId(),$key . 'h' . $i);
-          if (is_object($darkskyCmd)) {
+            if ($key == 'solar') {
+                continue;
+            }
             if ($key == 'windBearing') {
-              $windBearing0 = darkskyCmd::byEqLogicIdAndLogicalId($this->getId(),'windBearing0h' . $i);
-              $windBearing0->setConfiguration('value',$value);
-              $windBearing0->save();
-              $windBearing0->event($value);
+              $this->checkAndUpdateCmd('windBearing0h' . $i, $value);
               if ($value > 179) {
                 $value = $value -180;
               } else {
@@ -1700,23 +1875,20 @@ class darksky extends eqLogic {
             if ($key == 'humidity' || $key == 'cloudCover') {
               $value = $value * 100;
             }
-            $darkskyCmd->setConfiguration('value',$value);
-            $darkskyCmd->save();
-            $darkskyCmd->event($value);
-          }
+            $this->checkAndUpdateCmd($key . 'h' . $i, $value);
         }
         $i++;
       }
       foreach ($parsed_json['currently'] as $key => $value) {
         //log::add('darksky', 'debug', $key . ' ' . $value);
+        if ($key == 'solar') {
+            continue;
+        }
         if ($key != 'time') {
           $darkskyCmd = darkskyCmd::byEqLogicIdAndLogicalId($this->getId(),$key);
           if (is_object($darkskyCmd)) {
             if ($key == 'windBearing') {
-              $windBearing0 = darkskyCmd::byEqLogicIdAndLogicalId($this->getId(),'windBearing0');
-              $windBearing0->setConfiguration('value',$value);
-              $windBearing0->save();
-              $windBearing0->event($value);
+              $this->checkAndUpdateCmd('windBearing0', $value);
               if ($value > 179) {
                 $value = $value -180;
               } else {
@@ -1726,54 +1898,27 @@ class darksky extends eqLogic {
             if ($key == 'humidity' || $key == 'cloudCover') {
               $value = $value * 100;
             }
-            $darkskyCmd->setConfiguration('value',$value);
-            $darkskyCmd->save();
-            $darkskyCmd->event($value);
+            $this->checkAndUpdateCmd($key, $value);
           }
         }
       }
 
       if (!empty($parsed_json['alert'])) {
         $title = '';
-        $darkskyCmd = darkskyCmd::byEqLogicIdAndLogicalId($this->getId(),'alert');
         foreach ($parsed_json['alert'] as $key => $value) {
           if ($key == 'title') {
             $title .= ', ' . $value;
           }
         }
-        if (is_object($darkskyCmd)) {
-          $darkskyCmd->setConfiguration('value',$title);
-          $darkskyCmd->save();
-          $darkskyCmd->event($title);
-        }
+        $this->checkAndUpdateCmd('alert', $value);
       }
     }
 
     if ($frequence == 'hourly' || $frequence == 'all') {
-      $darkskyCmd = darkskyCmd::byEqLogicIdAndLogicalId($this->getId(),'summaryhours');
-      if (is_object($darkskyCmd)) {
-        $darkskyCmd->setConfiguration('value',$parsed_json['hourly']['summary']);
-        $darkskyCmd->save();
-        $darkskyCmd->event($parsed_json['hourly']['summary']);
-      }
-      $darkskyCmd = darkskyCmd::byEqLogicIdAndLogicalId($this->getId(),'iconhours');
-      if (is_object($darkskyCmd)) {
-        $darkskyCmd->setConfiguration('value',$parsed_json['hourly']['icon']);
-        $darkskyCmd->save();
-        $darkskyCmd->event($parsed_json['hourly']['icon']);
-      }
-      $darkskyCmd = darkskyCmd::byEqLogicIdAndLogicalId($this->getId(),'summaryweek');
-      if (is_object($darkskyCmd)) {
-        $darkskyCmd->setConfiguration('value',$parsed_json['daily']['summary']);
-        $darkskyCmd->save();
-        $darkskyCmd->event($parsed_json['daily']['summary']);
-      }
-      $darkskyCmd = darkskyCmd::byEqLogicIdAndLogicalId($this->getId(),'iconweek');
-      if (is_object($darkskyCmd)) {
-        $darkskyCmd->setConfiguration('value',$parsed_json['daily']['icon']);
-        $darkskyCmd->save();
-        $darkskyCmd->event($parsed_json['daily']['icon']);
-      }
+      $this->checkAndUpdateCmd('summaryhours', $parsed_json['hourly']['summary']);
+      $this->checkAndUpdateCmd('iconhours', $parsed_json['hourly']['icon']);
+      $this->checkAndUpdateCmd('summaryweek', $parsed_json['daily']['summary']);
+      $this->checkAndUpdateCmd('iconweek', $parsed_json['daily']['icon']);
     }
 
     $this->refreshWidget();
@@ -1792,7 +1937,7 @@ class darksky extends eqLogic {
     //$geolocval = str_replace(' ', '', $geolocCmd->execCmd()));
     $apikey = $darksky->getConfiguration('apikey', '');
     $lang = explode('_',config::byKey('language'));
-    $url = 'https://api.darksky.net/forecast/' . $apikey .'/' . trim($geolocval) . '?units=ca&lang=' . $lang[0];
+    $url = 'https://api.darksky.net/forecast/' . $apikey .'/' . trim($geolocval) . '?units=ca&lang=' . $lang[0] . '&solar=1';
     log::add('darksky', 'debug', $url);
     $json_string = file_get_contents($url);
     $parsed_json = json_decode($json_string, true);
