@@ -1965,6 +1965,7 @@ class darksky extends eqLogic {
       'cloudCover' => $parsed_json['currently']['cloudCover']*100 . '%',
       'pressure' => $parsed_json['currently']['pressure'] . 'hPa',
       'ozone' => $parsed_json['currently']['ozone'] . 'DU',
+      'uvIndex' => $parsed_json['currently']['uvIndex'],
     );
 
     $return['hour'] = array(
@@ -1979,6 +1980,7 @@ class darksky extends eqLogic {
       'cloudCover' => $parsed_json['hourly']['data']['1']['cloudCover']*100 . '%',
       'pressure' => $parsed_json['hourly']['data']['1']['pressure'] . 'hPa',
       'ozone' => $parsed_json['hourly']['data']['1']['ozone'] . 'DU',
+      'uvIndex' => $parsed_json['currently']['uvIndex'],
     );
 
     $return['day0'] = array(
@@ -1995,6 +1997,7 @@ class darksky extends eqLogic {
       'ozone' => $parsed_json['daily']['data']['0']['ozone'] . 'DU',
       'sunriseTime' => date('H:i',$parsed_json['daily']['data']['0']['sunriseTime']),
       'sunsetTime' => date('H:i',$parsed_json['daily']['data']['0']['sunsetTime']),
+      'uvIndex' => $parsed_json['currently']['uvIndex'],
     );
 
     $return['day1'] = array(
@@ -2011,6 +2014,7 @@ class darksky extends eqLogic {
       'ozone' => $parsed_json['daily']['data']['1']['ozone'] . 'DU',
       'sunriseTime' => date('H:i',$parsed_json['daily']['data']['1']['sunriseTime']),
       'sunsetTime' => date('H:i',$parsed_json['daily']['data']['1']['sunsetTime']),
+      'uvIndex' => $parsed_json['currently']['uvIndex'],
     );
 
     $return['day2'] = array(
@@ -2027,6 +2031,7 @@ class darksky extends eqLogic {
       'ozone' => $parsed_json['daily']['data']['2']['ozone'] . 'DU',
       'sunriseTime' => date('H:i',$parsed_json['daily']['data']['2']['sunriseTime']),
       'sunsetTime' => date('H:i',$parsed_json['daily']['data']['2']['sunsetTime']),
+      'uvIndex' => $parsed_json['currently']['uvIndex'],
     );
 
     $return['day3'] = array(
@@ -2043,6 +2048,7 @@ class darksky extends eqLogic {
       'ozone' => $parsed_json['daily']['data']['3']['ozone'] . 'DU',
       'sunriseTime' => date('H:i',$parsed_json['daily']['data']['3']['sunriseTime']),
       'sunsetTime' => date('H:i',$parsed_json['daily']['data']['3']['sunsetTime']),
+      'uvIndex' => $parsed_json['currently']['uvIndex'],
     );
 
     $return['day4'] = array(
@@ -2059,6 +2065,7 @@ class darksky extends eqLogic {
       'ozone' => $parsed_json['daily']['data']['4']['ozone'] . 'DU',
       'sunriseTime' => date('H:i',$parsed_json['daily']['data']['4']['sunriseTime']),
       'sunsetTime' => date('H:i',$parsed_json['daily']['data']['4']['sunsetTime']),
+      'uvIndex' => $parsed_json['currently']['uvIndex'],
     );
 
     $return['day5'] = array(
@@ -2075,6 +2082,7 @@ class darksky extends eqLogic {
       'ozone' => $parsed_json['daily']['data']['5']['ozone'] . 'DU',
       'sunriseTime' => date('H:i',$parsed_json['daily']['data']['5']['sunriseTime']),
       'sunsetTime' => date('H:i',$parsed_json['daily']['data']['5']['sunsetTime']),
+      'uvIndex' => $parsed_json['currently']['uvIndex'],
     );
 
     $return['day6'] = array(
@@ -2091,6 +2099,7 @@ class darksky extends eqLogic {
       'ozone' => $parsed_json['daily']['data']['6']['ozone'] . 'DU',
       'sunriseTime' => date('H:i',$parsed_json['daily']['data']['6']['sunriseTime']),
       'sunsetTime' => date('H:i',$parsed_json['daily']['data']['6']['sunsetTime']),
+      'uvIndex' => $parsed_json['currently']['uvIndex'],
     );
 
     return $return;

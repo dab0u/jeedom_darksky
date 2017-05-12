@@ -43,7 +43,7 @@ if (!isConnect()) {
 				<i class="jeedom-thermo-moyen"></i><span class="weather-status" data-l1key="temperature" style="margin-left: 5px;">   </span><span class="weather-status" data-l1key="apparentTemperature" style="margin-left: 5px;font-size: 0.8em;"> </span><br/>
 				<span class="weather-status" data-l1key="summary" style="margin-left: 5px;">   </span><br/>
 			</br>
-			<i class="wi wi-humidity"></i><span class="weather-status" data-l1key="humidity" style="margin-left: 5px;font-size: 0.8em;">  </span><i class="wi wi-cloud"></i><span class="weather-status" data-l1key="cloudCover" style="margin-left: 5px;font-size: 0.8em;">  </span><i class="wi wi-umbrella"></i><span class="weather-status" data-l1key="precipProbability" style="margin-left: 5px;font-size: 0.8em;">  </span><br/>
+			<i class="wi wi-humidity"></i><span class="weather-status" data-l1key="humidity" style="margin-left: 5px;font-size: 0.8em;">  </span><i class="wi wi-cloud"></i><span class="weather-status" data-l1key="cloudCover" style="margin-left: 5px;font-size: 0.8em;">  </span><i class="wi wi-umbrella"></i><span class="weather-status" data-l1key="precipProbability" style="margin-left: 5px;font-size: 0.8em;">  </span></span><i class="wi wi-hot"></i><span class="weather-status" data-l1key="uvIndex" style="margin-left: 5px;font-size: 0.8em;">  </span><br/>
 			<i class="wi wi-barometer"></i><span class="weather-status" data-l1key="pressure" style="margin-left: 5px;font-size: 0.8em;">  </span> <i class="fa fa-flask"></i> <span class="weather-status" data-l1key="ozone" style="margin-left: 5px;font-size: 0.8em;">   </span>
 
 		</div>
@@ -63,7 +63,7 @@ if (!isConnect()) {
 			<i class="jeedom-thermo-moyen"></i><span class="weather-hour" data-l1key="temperature" style="margin-left: 5px;">   </span><span class="weather-hour" data-l1key="apparentTemperature" style="margin-left: 5px;font-size: 0.8em;"> </span><br/>
 			<span class="weather-hour" data-l1key="summary" style="margin-left: 5px;">   </span><br/>
 		</br>
-		<i class="wi wi-humidity"></i><span class="weather-hour" data-l1key="humidity" style="margin-left: 5px;font-size: 0.8em;">  </span><i class="wi wi-cloud"></i><span class="weather-hour" data-l1key="cloudCover" style="margin-left: 5px;font-size: 0.8em;">  </span><i class="wi wi-umbrella"></i><span class="weather-hour" data-l1key="precipProbability" style="margin-left: 5px;font-size: 0.8em;">  </span><br/>
+		<i class="wi wi-humidity"></i><span class="weather-hour" data-l1key="humidity" style="margin-left: 5px;font-size: 0.8em;">  </span><i class="wi wi-cloud"></i><span class="weather-hour" data-l1key="cloudCover" style="margin-left: 5px;font-size: 0.8em;">  </span><i class="wi wi-umbrella"></i><span class="weather-hour" data-l1key="precipProbability" style="margin-left: 5px;font-size: 0.8em;">  </span></span><i class="wi wi-hot"></i><span class="weather-hour" data-l1key="uvIndex" style="margin-left: 5px;font-size: 0.8em;">  </span><br/>
 		<i class="wi wi-barometer"></i><span class="weather-hour" data-l1key="pressure" style="margin-left: 5px;font-size: 0.8em;">  </span> <i class="fa fa-flask"></i> <span class="weather-hour" data-l1key="ozone" style="margin-left: 5px;font-size: 0.8em;">   </span>
 
 	</div>
@@ -82,7 +82,7 @@ if (!isConnect()) {
 		<i class="jeedom-thermo-moyen"></i><span class="weather-day0" data-l1key="temperatureMin" style="margin-left: 5px;">   </span> / <span class="weather-day0" data-l1key="temperatureMax" style="margin-left: 5px;"> </span><br/>
 		<span class="weather-day0" data-l1key="summary" style="margin-left: 5px;">   </span><br/>
 	</br>
-	<i class="wi wi-humidity"></i><span class="weather-day0" data-l1key="humidity" style="margin-left: 5px;font-size: 0.8em;">  </span><i class="wi wi-cloud"></i><span class="weather-day0" data-l1key="cloudCover" style="margin-left: 5px;font-size: 0.8em;">  </span><i class="wi wi-umbrella"></i><span class="weather-day0" data-l1key="precipProbability" style="margin-left: 5px;font-size: 0.8em;">  </span><br/>
+	<i class="wi wi-humidity"></i><span class="weather-day0" data-l1key="humidity" style="margin-left: 5px;font-size: 0.8em;">  </span><i class="wi wi-cloud"></i><span class="weather-day0" data-l1key="cloudCover" style="margin-left: 5px;font-size: 0.8em;">  </span><i class="wi wi-umbrella"></i><span class="weather-day0" data-l1key="precipProbability" style="margin-left: 5px;font-size: 0.8em;">  </span></span><i class="wi wi-hot"></i><span class="weather-day0" data-l1key="uvIndex" style="margin-left: 5px;font-size: 0.8em;">  </span><br/>
 	<i class="wi wi-barometer"></i><span class="weather-day0" data-l1key="pressure" style="margin-left: 5px;font-size: 0.8em;">  </span> <i class="fa fa-flask"></i> <span class="weather-day0" data-l1key="ozone" style="margin-left: 5px;font-size: 0.8em;">   </span>
 
 	<div>
@@ -114,7 +114,7 @@ if (!isConnect()) {
 			<i class="jeedom-thermo-moyen"></i><span class="weather-day1" data-l1key="temperatureMin" style="margin-left: 5px;">   </span> / <span class="weather-day1" data-l1key="temperatureMax" style="margin-left: 5px;"> </span><br/>
 			<span class="weather-day1" data-l1key="summary" style="margin-left: 5px;">   </span><br/>
 		</br>
-		<i class="wi wi-humidity"></i><span class="weather-day1" data-l1key="humidity" style="margin-left: 5px;font-size: 0.8em;">  </span><i class="wi wi-cloud"></i><span class="weather-day1" data-l1key="cloudCover" style="margin-left: 5px;font-size: 0.8em;">  </span><i class="wi wi-umbrella"></i><span class="weather-day1" data-l1key="precipProbability" style="margin-left: 5px;font-size: 0.8em;">  </span><br/>
+		<i class="wi wi-humidity"></i><span class="weather-day1" data-l1key="humidity" style="margin-left: 5px;font-size: 0.8em;">  </span><i class="wi wi-cloud"></i><span class="weather-day1" data-l1key="cloudCover" style="margin-left: 5px;font-size: 0.8em;">  </span><i class="wi wi-umbrella"></i><span class="weather-day1" data-l1key="precipProbability" style="margin-left: 5px;font-size: 0.8em;">  </span><i class="wi wi-hot"></i><span class="weather-day1" data-l1key="uvIndex" style="margin-left: 5px;font-size: 0.8em;">  </span><br/>
 		<i class="wi wi-barometer"></i><span class="weather-day1" data-l1key="pressure" style="margin-left: 5px;font-size: 0.8em;">  </span> <i class="fa fa-flask"></i> <span class="weather-day1" data-l1key="ozone" style="margin-left: 5px;font-size: 0.8em;">   </span>
 
 		<div>
@@ -136,7 +136,7 @@ if (!isConnect()) {
 		<i class="jeedom-thermo-moyen"></i><span class="weather-day2" data-l1key="temperatureMin" style="margin-left: 5px;">   </span> / <span class="weather-day2" data-l1key="temperatureMax" style="margin-left: 5px;"> </span><br/>
 		<span class="weather-day2" data-l1key="summary" style="margin-left: 5px;">   </span><br/>
 	</br>
-	<i class="wi wi-humidity"></i><span class="weather-day2" data-l1key="humidity" style="margin-left: 5px;font-size: 0.8em;">  </span><i class="wi wi-cloud"></i><span class="weather-day2" data-l1key="cloudCover" style="margin-left: 5px;font-size: 0.8em;">  </span><i class="wi wi-umbrella"></i><span class="weather-day2" data-l1key="precipProbability" style="margin-left: 5px;font-size: 0.8em;">  </span><br/>
+	<i class="wi wi-humidity"></i><span class="weather-day2" data-l1key="humidity" style="margin-left: 5px;font-size: 0.8em;">  </span><i class="wi wi-cloud"></i><span class="weather-day2" data-l1key="cloudCover" style="margin-left: 5px;font-size: 0.8em;">  </span><i class="wi wi-umbrella"></i><span class="weather-day2" data-l1key="precipProbability" style="margin-left: 5px;font-size: 0.8em;">  </span></span><i class="wi wi-hot"></i><span class="weather-day2" data-l1key="uvIndex" style="margin-left: 5px;font-size: 0.8em;">  </span><br/>
 	<i class="wi wi-barometer"></i><span class="weather-day2" data-l1key="pressure" style="margin-left: 5px;font-size: 0.8em;">  </span> <i class="fa fa-flask"></i> <span class="weather-day2" data-l1key="ozone" style="margin-left: 5px;font-size: 0.8em;">   </span>
 
 	<div>
@@ -158,7 +158,7 @@ if (!isConnect()) {
 		<i class="jeedom-thermo-moyen"></i><span class="weather-day3" data-l1key="temperatureMin" style="margin-left: 5px;">   </span> / <span class="weather-day3" data-l1key="temperatureMax" style="margin-left: 5px;"> </span><br/>
 		<span class="weather-day3" data-l1key="summary" style="margin-left: 5px;">   </span><br/>
 	</br>
-	<i class="wi wi-humidity"></i><span class="weather-day3" data-l1key="humidity" style="margin-left: 5px;font-size: 0.8em;">  </span><i class="wi wi-cloud"></i><span class="weather-day3" data-l1key="cloudCover" style="margin-left: 5px;font-size: 0.8em;">  </span><i class="wi wi-umbrella"></i><span class="weather-day3" data-l1key="precipProbability" style="margin-left: 5px;font-size: 0.8em;">  </span><br/>
+	<i class="wi wi-humidity"></i><span class="weather-day3" data-l1key="humidity" style="margin-left: 5px;font-size: 0.8em;">  </span><i class="wi wi-cloud"></i><span class="weather-day3" data-l1key="cloudCover" style="margin-left: 5px;font-size: 0.8em;">  </span><i class="wi wi-umbrella"></i><span class="weather-day3" data-l1key="precipProbability" style="margin-left: 5px;font-size: 0.8em;">  </span></span><i class="wi wi-hot"></i><span class="weather-day3" data-l1key="uvIndex" style="margin-left: 5px;font-size: 0.8em;">  </span><br/>
 	<i class="wi wi-barometer"></i><span class="weather-day3" data-l1key="pressure" style="margin-left: 5px;font-size: 0.8em;">  </span> <i class="fa fa-flask"></i> <span class="weather-day3" data-l1key="ozone" style="margin-left: 5px;font-size: 0.8em;">   </span>
 
 	<div>
@@ -183,7 +183,7 @@ if (!isConnect()) {
 			<i class="jeedom-thermo-moyen"></i><span class="weather-day4" data-l1key="temperatureMin" style="margin-left: 5px;">   </span> / <span class="weather-day4" data-l1key="temperatureMax" style="margin-left: 5px;"> </span><br/>
 			<span class="weather-day4" data-l1key="summary" style="margin-left: 5px;">   </span><br/>
 		</br>
-		<i class="wi wi-humidity"></i><span class="weather-day4" data-l1key="humidity" style="margin-left: 5px;font-size: 0.8em;">  </span><i class="wi wi-cloud"></i><span class="weather-day4" data-l1key="cloudCover" style="margin-left: 5px;font-size: 0.8em;">  </span><i class="wi wi-umbrella"></i><span class="weather-day4" data-l1key="precipProbability" style="margin-left: 5px;font-size: 0.8em;">  </span><br/>
+		<i class="wi wi-humidity"></i><span class="weather-day4" data-l1key="humidity" style="margin-left: 5px;font-size: 0.8em;">  </span><i class="wi wi-cloud"></i><span class="weather-day4" data-l1key="cloudCover" style="margin-left: 5px;font-size: 0.8em;">  </span><i class="wi wi-umbrella"></i><span class="weather-day4" data-l1key="precipProbability" style="margin-left: 5px;font-size: 0.8em;">  </span></span><i class="wi wi-hot"></i><span class="weather-day4" data-l1key="uvIndex" style="margin-left: 5px;font-size: 0.8em;">  </span><br/>
 		<i class="wi wi-barometer"></i><span class="weather-day4" data-l1key="pressure" style="margin-left: 5px;font-size: 0.8em;">  </span> <i class="fa fa-flask"></i> <span class="weather-day4" data-l1key="ozone" style="margin-left: 5px;font-size: 0.8em;">   </span>
 
 		<div>
@@ -205,7 +205,7 @@ if (!isConnect()) {
 		<i class="jeedom-thermo-moyen"></i><span class="weather-day5" data-l1key="temperatureMin" style="margin-left: 5px;">   </span> / <span class="weather-day5" data-l1key="temperatureMax" style="margin-left: 5px;"> </span><br/>
 		<span class="weather-day5" data-l1key="summary" style="margin-left: 5px;">   </span><br/>
 	</br>
-	<i class="wi wi-humidity"></i><span class="weather-day5" data-l1key="humidity" style="margin-left: 5px;font-size: 0.8em;">  </span><i class="wi wi-cloud"></i><span class="weather-day5" data-l1key="cloudCover" style="margin-left: 5px;font-size: 0.8em;">  </span><i class="wi wi-umbrella"></i><span class="weather-day5" data-l1key="precipProbability" style="margin-left: 5px;font-size: 0.8em;">  </span><br/>
+	<i class="wi wi-humidity"></i><span class="weather-day5" data-l1key="humidity" style="margin-left: 5px;font-size: 0.8em;">  </span><i class="wi wi-cloud"></i><span class="weather-day5" data-l1key="cloudCover" style="margin-left: 5px;font-size: 0.8em;">  </span><i class="wi wi-umbrella"></i><span class="weather-day5" data-l1key="precipProbability" style="margin-left: 5px;font-size: 0.8em;">  </span></span><i class="wi wi-hot"></i><span class="weather-day5" data-l1key="uvIndex" style="margin-left: 5px;font-size: 0.8em;">  </span><br/>
 	<i class="wi wi-barometer"></i><span class="weather-day5" data-l1key="pressure" style="margin-left: 5px;font-size: 0.8em;">  </span> <i class="fa fa-flask"></i> <span class="weather-day5" data-l1key="ozone" style="margin-left: 5px;font-size: 0.8em;">   </span>
 
 	<div>
@@ -227,7 +227,7 @@ if (!isConnect()) {
 		<i class="jeedom-thermo-moyen"></i><span class="weather-day6" data-l1key="temperatureMin" style="margin-left: 5px;">   </span> / <span class="weather-day6" data-l1key="temperatureMax" style="margin-left: 5px;"> </span><br/>
 		<span class="weather-day6" data-l1key="summary" style="margin-left: 5px;">   </span><br/>
 	</br>
-	<i class="wi wi-humidity"></i><span class="weather-day6" data-l1key="humidity" style="margin-left: 5px;font-size: 0.8em;">  </span><i class="wi wi-cloud"></i><span class="weather-day6" data-l1key="cloudCover" style="margin-left: 5px;font-size: 0.8em;">  </span><i class="wi wi-umbrella"></i><span class="weather-day6" data-l1key="precipProbability" style="margin-left: 5px;font-size: 0.8em;">  </span><br/>
+	<i class="wi wi-humidity"></i><span class="weather-day6" data-l1key="humidity" style="margin-left: 5px;font-size: 0.8em;">  </span><i class="wi wi-cloud"></i><span class="weather-day6" data-l1key="cloudCover" style="margin-left: 5px;font-size: 0.8em;">  </span><i class="wi wi-umbrella"></i><span class="weather-day6" data-l1key="precipProbability" style="margin-left: 5px;font-size: 0.8em;">  </span></span><i class="wi wi-hot"></i><span class="weather-day6" data-l1key="uvIndex" style="margin-left: 5px;font-size: 0.8em;">  </span><br/>
 	<i class="wi wi-barometer"></i><span class="weather-day6" data-l1key="pressure" style="margin-left: 5px;font-size: 0.8em;">  </span> <i class="fa fa-flask"></i> <span class="weather-day6" data-l1key="ozone" style="margin-left: 5px;font-size: 0.8em;">   </span>
 
 	<div>
