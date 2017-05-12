@@ -1881,12 +1881,7 @@ class darksky extends eqLogic {
       }
       foreach ($parsed_json['currently'] as $key => $value) {
         //log::add('darksky', 'debug', $key . ' ' . $value);
-        if ($key == 'solar') {
-            continue;
-        }
-        if ($key != 'time') {
-          $darkskyCmd = darkskyCmd::byEqLogicIdAndLogicalId($this->getId(),$key);
-          if (is_object($darkskyCmd)) {
+        if ($key != 'time' && $key != 'solar') {
             if ($key == 'windBearing') {
               $this->checkAndUpdateCmd('windBearing0', $value);
               if ($value > 179) {
@@ -1899,7 +1894,6 @@ class darksky extends eqLogic {
               $value = $value * 100;
             }
             $this->checkAndUpdateCmd($key, $value);
-          }
         }
       }
 
