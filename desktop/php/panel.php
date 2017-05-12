@@ -385,7 +385,6 @@ $(function () {
 				tooltip: {
 					valueSuffix: ' °C'
 				},
-                yAxis: 1,
 				color: '#00FF00',
 				negativeColor: '#48AFE8',
 				data: []
@@ -414,7 +413,6 @@ $(function () {
 					valueSuffix: ''
 				},
 				color: '#FF0000',
-                yAxis: 1,
 				data: []
 			}
 			],
