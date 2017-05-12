@@ -385,14 +385,15 @@ $(function () {
 				tooltip: {
 					valueSuffix: ' °C'
 				},
-				color: '#FF3333',
+                yAxis: 1,
+				color: '#00FF00',
 				negativeColor: '#48AFE8',
 				data: []
 			},
 			{
 				name: 'Précipitations',
 				type: 'column',
-				color: '#68CFE8',
+				color: '#0000FF',
 				yAxis: 1,
 				tooltip: {
 					valueSuffix: ' mm/h'
@@ -412,7 +413,8 @@ $(function () {
 				tooltip: {
 					valueSuffix: ''
 				},
-				color: '#00FFFF',
+				color: '#FF0000',
+                yAxis: 1,
 				data: []
 			}
 			],
@@ -425,7 +427,7 @@ $(function () {
 			options.series[0].data.push(parseFloat(data.result.previsions.temperature[i],2));
 			options.series[1].data.push(parseFloat(data.result.previsions.precipIntensity[i],2));
 			options.series[2].data.push(parseInt(data.result.previsions.pressure[i]));
-            options.series[2].data.push(parseInt(data.result.previsions.uvIndex[i]));
+            options.series[3].data.push(parseInt(data.result.previsions.uvIndex[i]));
 			options.xAxis.categories.push(displayDate);
 
 		};
