@@ -1861,21 +1861,20 @@ class darksky extends eqLogic {
       $i = 1;
       while ($i < 6) {
         foreach ($parsed_json['hourly']['data'][$i] as $key => $value) {
-            if ($key == 'solar') {
-                continue;
+            if ($key != 'solar') {
+                if ($key == 'windBearing') {
+                  $this->checkAndUpdateCmd('windBearing0h' . $i, $value);
+                  if ($value > 179) {
+                    $value = $value -180;
+                  } else {
+                    $value = $value + 180;
+                  }
+                }
+                if ($key == 'humidity' || $key == 'cloudCover') {
+                  $value = $value * 100;
+                }
+                $this->checkAndUpdateCmd($key . 'h' . $i, $value);
             }
-            if ($key == 'windBearing') {
-              $this->checkAndUpdateCmd('windBearing0h' . $i, $value);
-              if ($value > 179) {
-                $value = $value -180;
-              } else {
-                $value = $value + 180;
-              }
-            }
-            if ($key == 'humidity' || $key == 'cloudCover') {
-              $value = $value * 100;
-            }
-            $this->checkAndUpdateCmd($key . 'h' . $i, $value);
         }
         $i++;
       }
