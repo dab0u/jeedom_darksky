@@ -406,6 +406,14 @@ $(function () {
 					valueSuffix: ' hPa'
 				},
 				data: []
+			},
+            {
+				name: 'Index UV',
+				tooltip: {
+					valueSuffix: ''
+				},
+				color: '#00FFFF',
+				data: []
 			}
 			],
 		};
@@ -417,6 +425,7 @@ $(function () {
 			options.series[0].data.push(parseFloat(data.result.previsions.temperature[i],2));
 			options.series[1].data.push(parseFloat(data.result.previsions.precipIntensity[i],2));
 			options.series[2].data.push(parseInt(data.result.previsions.pressure[i]));
+            options.series[2].data.push(parseInt(data.result.previsions.uvIndex[i]));
 			options.xAxis.categories.push(displayDate);
 
 		};

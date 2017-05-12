@@ -1944,6 +1944,7 @@ class darksky extends eqLogic {
       $return['previsions']['precipIntensity'][] = $value['precipIntensity'];
       $return['previsions']['windSpeed'][] = $value['windSpeed'];
       $return['previsions']['pressure'][] = $value['pressure'];
+      $return['previsions']['uvIndex'][] = $value['uvIndex'];
     }
 
     $return['status'] = array(
@@ -2157,6 +2158,9 @@ class darksky extends eqLogic {
 
     $humidity = $this->getCmd(null, 'humidity');
     $replace['#humidity#'] = is_object($humidity) ? $humidity->execCmd() : '';
+
+    $uvindex = $this->getCmd(null, 'uvIndex');
+    $replace['#uvi#'] = is_object($uvindex) ? $uvindex->execCmd() : '';
 
     $pressure = $this->getCmd(null, 'pressure');
     $replace['#pressure#'] = is_object($pressure) ? $pressure->execCmd() : '';
