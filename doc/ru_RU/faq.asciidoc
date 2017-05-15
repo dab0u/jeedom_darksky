@@ -1,7 +1,7 @@
 [panel,primary]
 .Est-ce que le plugin s'appuie sur des API tiers ?
 --
-Oui, le plugin récupère les valeurs de Forecast.io
+Oui, le plugin récupère les valeurs de Dark Sky
 --
 
 [panel,primary]

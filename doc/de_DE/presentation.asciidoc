@@ -1,6 +1,8 @@
-==== Forecast.io, Echtzeit-Wetter
+==== DarkSky.net, météo temps réel
 
-Dieses Plugin ermöglicht die Wettervorhersage der Website Forecast.io anzuzeigen, die Daten in "Echtzeit" verfügt.
+Ce plugin permet d'obtenir la météo depuis le site DarkSKy.net qui dispose de données "temps réel"
+
+Une présentation est disponible sur cet article : https://lunarok-domotique.com/plugins-jeedom/dark-sky-meteo-panel/[Article de présentation]
 
 Das Plugin hat unterschiedliche Aktualisierungsrate :
 

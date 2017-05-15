@@ -6,4 +6,4 @@ Man muss ein Gerät hinzufügen und die 2 Parameter konfigurieren :
 
    
 
-  - der Forecast.io API-Schlüssel (https://developer.forecast.io/)
+  - la clef API de Dark Sky (https://darksky.net/dev/)

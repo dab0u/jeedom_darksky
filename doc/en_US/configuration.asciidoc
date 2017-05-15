@@ -6,4 +6,4 @@ Must add equipment and 2 settings:
 
   - quel équipement du plugin geoloc servira pour les coordonnées de la météo à récupérer
 
-  - la clef API de Forecast.io (https://developer.forecast.io/)
+  - la clef API de Dark Sky (https://darksky.net/dev/)
