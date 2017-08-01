@@ -1824,6 +1824,10 @@ class darksky extends eqLogic {
     $url = 'https://api.darksky.net/forecast/' . $apikey .'/' . $geolocval . '?units=ca&lang=' . $lang[0] . '&solar=1';
     log::add('darksky', 'debug', $url);
     $json_string = file_get_contents($url);
+    if ($json_string === false) {
+        log::add('darksky', 'debug', 'Problème de chargement API');
+        return;
+    }
     $parsed_json = json_decode($json_string, true);
     //log::add('darksky', 'debug', print_r($json_string, true));
     //log::add('darksky', 'debug', print_r($parsed_json, true));
