@@ -137,7 +137,7 @@ $eqLogics = eqLogic::byType('darksky');
             </div>
 
             <div class="form-group">
-              <label class="col-sm-3 control-label">{{Clef}} <a href='https://darksky.net/dev/'>API DarkSky.net</a></label>
+              <label class="col-sm-3 control-label">{{Clef}} <a href='https://darksky.net/dev/' target="_blank">API DarkSky.net</a></label>
               <div class="col-sm-3">
                 <input type="text" class="eqLogicAttr configuration form-control" data-l1key="configuration" data-l2key="apikey"/>
               </div>
