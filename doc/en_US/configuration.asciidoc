@@ -4,6 +4,6 @@ The plugin does not have general configuration.
 
 Must add equipment and 2 settings:
 
-  - quel équipement du plugin geoloc servira pour les coordonnées de la météo à récupérer
+  - quel équipement de localisation (geoloc ou geotrav) servira pour les coordonnées de la météo à récupérer
 
   - la clef API de Dark Sky (https://darksky.net/dev/)

@@ -4,6 +4,6 @@ Das Plugin enthält keine allgemeine Konfiguration.
 
 Man muss ein Gerät hinzufügen und die 2 Parameter konfigurieren :
 
-   
+  - quel équipement de localisation (geoloc ou geotrav) servira pour les coordonnées de la météo à récupérer
 
   - la clef API de Dark Sky (https://darksky.net/dev/)
