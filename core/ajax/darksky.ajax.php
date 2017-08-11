@@ -24,10 +24,6 @@ try {
         throw new Exception(__('401 - Accès non autorisé', __FILE__));
     }
 
-    if (init('action') == 'getGeoloc') {
-      ajax::success(darksky::getGeoloc());
-    }
-
     if (init('action') == 'loadingData') {
       ajax::success(darksky::loadingData(init('value')));
     }

@@ -119,19 +119,17 @@ $eqLogics = eqLogic::byType('darksky');
               <label class="col-sm-3 control-label">{{Géolocalisation}}</label>
               <div class="col-sm-3">
                 <select class="form-control eqLogicAttr configuration" id="geoloc" data-l1key="configuration" data-l2key="geoloc">
-                  <?php
-                  if (class_exists('geolocCmd')) {
-                    foreach (eqLogic::byType('geoloc') as $geoloc) {
-                      foreach (geolocCmd::byEqLogicId($geoloc->getId()) as $geoinfo) {
-                        if ($geoinfo->getConfiguration('mode') == 'fixe' || $geoinfo->getConfiguration('mode') == 'dynamic') {
-                          echo '<option value="' . $geoinfo->getId() . '">' . $geoinfo->getName() . '</option>';
+                    <?php
+                    if (class_exists('geotravCmd')) {
+                        foreach (eqLogic::byType('geotrav') as $geoloc) {
+                            if ($geoloc->getConfiguration('type') == 'location') {
+                                echo '<option value="' . $geoloc->getId() . '">' . $geoloc->getName() . '</option>';
+                            }
                         }
-                      }
+                    } else {
+                        echo '<option value="">Pas de localisation disponible</option>';
                     }
-                  } else {
-                    echo '<option value="none">Geoloc absent</option>';
-                  }
-                  ?>
+                    ?>
                 </select>
               </div>
             </div>
