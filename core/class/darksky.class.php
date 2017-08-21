@@ -1921,14 +1921,7 @@ class darksky extends eqLogic {
     public function loadingData($eqlogic) {
         $return = array();
         $darksky = darksky::byId($eqlogic);
-        $geoloc = $darksky->getConfiguration('geoloc', '');
-        $geolocCmd = geolocCmd::byId($geoloc);
-        if ($geolocCmd->getConfiguration('mode') == 'fixe') {
-            $geolocval = $geolocCmd->getConfiguration('coordinate');
-        } else {
-            $geolocval = $geolocCmd->execCmd();
-        }
-        //$geolocval = str_replace(' ', '', $geolocCmd->execCmd()));
+        $geolocval = geotravCmd::byEqLogicIdAndLogicalId($this->getConfiguration('geoloc'),'location:coordinate')->execCmd();
         $apikey = $darksky->getConfiguration('apikey', '');
         $lang = explode('_',config::byKey('language'));
         $url = 'https://api.darksky.net/forecast/' . $apikey .'/' . trim($geolocval) . '?units=ca&lang=' . $lang[0] . '&solar=1';
