@@ -25,8 +25,26 @@ try {
     }
 
     if (init('action') == 'loadingData') {
-      ajax::success(darksky::loadingData(init('value')));
+        if (init('value') == 0) {
+            foreach (eqLogic::byType('geotrav', true) as $eqLogic) {
+    			$value = $eqLogic->getId();
+                exit;
+    		}
+        } else {
+            $value = init('value');
+        }
+      ajax::success(darksky::loadingData($value));
     }
+
+    if (init('action') == 'getDarksky') {
+		foreach (eqLogic::byType('geotrav', true) as $eqLogic) {
+			if ($eqLogic->getIsEnable() == 0 || $eqLogic->getIsVisible() == 0) {
+				continue;
+			}
+            $return[] = '<button class="btn btn-default darkskyEqlogic" id="' . $eqLogic->getId() . '" type="button" onClick="loadingData(' . $eqLogic->getId() . ')">' . $eqLogic->getName() . '</button>';
+		}
+		ajax::success($return);
+	}
 
     throw new Exception(__('Aucune methode correspondante à : ', __FILE__) . init('action'));
     /*     * *********Catch exeption*************** */

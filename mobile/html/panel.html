@@ -1,10 +1,3 @@
-<?php
-if (!isConnect()) {
-    throw new Exception('{{401 - Accès non autorisé}}');
-}
-
-?>
-
 <script src="plugins/darksky/desktop/js/skycons.js"></script>
 
 <link rel="stylesheet" type="text/css" href="plugins/darksky/desktop/weather-icons/css/weather-icons.min.css" />
@@ -12,7 +5,7 @@ if (!isConnect()) {
 <div class="container-fluid darksky-panel">
     <div class="row">
         <div class="col-md-12">
-            <div class="btn-group">
+            <div class="btn-group" id="buttonDarksky">
 
                 <?php
                 $first = 0;
@@ -22,7 +15,7 @@ if (!isConnect()) {
                         $selected = $darksky->getId();
                         $first = 1;
                     }
-                    echo '<button class="btn btn-default darkskyEqlogic" id="' . $darksky->getId() . '" type="button" onClick="loadingData(' . $darksky->getId() . ')">' . $darksky->getName() . '</button>';
+                    echo ';
                 }
                 ?>
             </div>
@@ -119,15 +112,12 @@ if (!isConnect()) {
     </div>
 </div>
 
-
+<script src="core/php/getJS.php?file=plugins/darksky/mobile/js/panel.js"></script>
 
 <script>
 $(function () {
 
-    loadingData(
-        <?php
-        echo $selected;
-        ?>);
+    loadingData(0);
 
     });
 
@@ -170,26 +160,6 @@ $(function () {
         $('.weather-day1').value('');
         for (var i in data.result.day1) {
             $('.weather-day1[data-l1key=' + i + ']').value(data.result.day1[i]);
-        }
-        $('.weather-day2').value('');
-        for (var i in data.result.day2) {
-            $('.weather-day2[data-l1key=' + i + ']').value(data.result.day2[i]);
-        }
-        $('.weather-day3').value('');
-        for (var i in data.result.day3) {
-            $('.weather-day3[data-l1key=' + i + ']').value(data.result.day3[i]);
-        }
-        $('.weather-day4').value('');
-        for (var i in data.result.day4) {
-            $('.weather-day4[data-l1key=' + i + ']').value(data.result.day4[i]);
-        }
-        $('.weather-day5').value('');
-        for (var i in data.result.day5) {
-            $('.weather-day5[data-l1key=' + i + ']').value(data.result.day5[i]);
-        }
-        $('.weather-day6').value('');
-        for (var i in data.result.day6) {
-            $('.weather-day6[data-l1key=' + i + ']').value(data.result.day6[i]);
         }
 
         var skycons = new Skycons({'color':'black'});
