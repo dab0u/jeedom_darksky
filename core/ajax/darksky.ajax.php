@@ -28,7 +28,7 @@ try {
     if (init('value') == '0') {
       foreach (eqLogic::byType('darksky', true) as $eqLogic) {
         $value = $eqLogic->getId();
-        exit;
+        break;
       }
     } else {
       $value = init('value');
