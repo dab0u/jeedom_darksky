@@ -6,18 +6,6 @@
     <div class="row">
         <div class="col-md-12">
             <div class="btn-group" id="buttonDarksky">
-
-                <?php
-                $first = 0;
-                $eqLogics = darksky::byType('darksky', true);
-                foreach ($eqLogics as $darksky) {
-                    if ($first == 0 ) {
-                        $selected = $darksky->getId();
-                        $first = 1;
-                    }
-                    echo ';
-                }
-                ?>
             </div>
         </div>
     </div>
