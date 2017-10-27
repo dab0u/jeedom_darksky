@@ -25,7 +25,7 @@ try {
   }
 
   if (init('action') == 'loadingData') {
-    if (init('value') == 0) {
+    if (init('value') == '0') {
       foreach (eqLogic::byType('darksky', true) as $eqLogic) {
         $value = $eqLogic->getId();
         exit;
