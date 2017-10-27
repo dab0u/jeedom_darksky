@@ -26,7 +26,7 @@ function displayDarksky() {
   $.showLoading();
   $.ajax({
     type: 'POST',
-    url: 'plugins/darsky/core/ajax/darksky.ajax.php',
+    url: 'plugins/darksky/core/ajax/darksky.ajax.php',
     data: {
       action: 'getDarksky',
       version: 'mview'
