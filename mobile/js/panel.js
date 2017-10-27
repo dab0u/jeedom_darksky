@@ -196,15 +196,20 @@ function loadingData(eqLogic){
   ],
 };
 
+var t = 0;
 for (var i in data.result.previsions.time) {
   //console.log(data.result.previsions.temperature[i]);
   var date = new Date(parseInt(data.result.previsions.time[i]));
   var displayDate = date.getDate() + '/' + (date.getMonth()+1) + ' ' + date.getHours() + ':' + date.getMinutes();
+  t++;
   options.series[0].data.push(parseFloat(data.result.previsions.temperature[i],2));
   options.series[1].data.push(parseFloat(data.result.previsions.precipIntensity[i],2));
   options.series[2].data.push(parseInt(data.result.previsions.pressure[i]));
   options.series[3].data.push(parseInt(data.result.previsions.uvIndex[i]));
   options.xAxis.categories.push(displayDate);
+  if (t>=8){
+    break;
+  }
 
 };
 
