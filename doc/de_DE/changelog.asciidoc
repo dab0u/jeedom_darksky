@@ -1,7 +1,7 @@
-==== Changelog
+==== Änderungsprotokoll
 
 Si une mise à jour est proposée sans note dans cette section, il s'agit de documentation, traduction ou correction mineure
 
-===== Octobre 2017
+===== Oktober 2017
 
 Ajout du panel mobile
